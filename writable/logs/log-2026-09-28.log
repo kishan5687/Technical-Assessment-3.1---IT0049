@@ -1,0 +1,123 @@
+CRITICAL - 2026-09-28 05:44:22 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "users/new.php"
+[Method: GET, Route: users/new]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('users/new.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('users/new', [], true)
+ 3 APPPATH\Controllers\Users.php(20): view('users/new')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Users->new()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\kisha\\Downloads\\TECHNICAL ASSESSMENT 3.1\\public\\index.php')
+CRITICAL - 2026-09-28 05:45:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "users/new.php"
+[Method: GET, Route: users/new]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('users/new.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('users/new', [], true)
+ 3 APPPATH\Controllers\Users.php(20): view('users/new')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Users->new()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\kisha\\Downloads\\TECHNICAL ASSESSMENT 3.1\\public\\index.php')
+DEBUG - 2026-09-28 05:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-09-28 05:48:51 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\BaseModel.php(899): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\Model.php(670): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\BaseModel.php(752): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\app\Controllers\Customers.php(39): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\CodeIgniter.php(974): App\Controllers\Customers->create()
+#10 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customers))
+#11 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\rewrite.php(44): require_once('C:\\Users\\kisha\\...')
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#3 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\BaseModel.php(899): CodeIgniter\Model->doInsert(Array)
+#5 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\Model.php(670): CodeIgniter\BaseModel->insert(Array, false)
+#6 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\BaseModel.php(752): CodeIgniter\Model->insert(Array, false)
+#7 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\app\Controllers\Customers.php(39): CodeIgniter\BaseModel->save(Array)
+#8 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\CodeIgniter.php(974): App\Controllers\Customers->create()
+#9 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customers))
+#10 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\Users\kisha\Downloads\TECHNICAL ASSESSMENT 3.1\system\rewrite.php(44): require_once('C:\\Users\\kisha\\...')
+#15 {main}
+CRITICAL - 2026-09-28 05:48:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: POST, Route: customers/create]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `customers` (`full_name`, `email`) VALUES (:full_name:, :email:)', [...], false)
+ 3 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(752): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\Customers.php(39): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Customers->create()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customers))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\kisha\\Downloads\\TECHNICAL ASSESSMENT 3.1\\public\\index.php')
+DEBUG - 2026-09-28 05:51:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-28 05:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-28 05:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-28 05:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-28 05:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-28 05:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-28 05:53:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-28 05:53:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-28 05:53:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-28 05:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-09-28 05:53:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "customers/index.php"
+[Method: GET, Route: customers]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('customers/index.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('customers/index', [], true)
+ 3 APPPATH\Controllers\Customers.php(14): view('customers/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Customers->index()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customers))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\kisha\\Downloads\\TECHNICAL ASSESSMENT 3.1\\public\\index.php')
+DEBUG - 2026-09-28 05:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-28 05:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-09-28 05:57:23 --> ErrorException: Cannot redeclare App\Models\UserModel::$allowedFields
+[Method: POST, Route: users/create]
+in APPPATH\Models\UserModel.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2026-09-28 05:57:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-28 05:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-28 06:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-28 06:01:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-28 06:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-28 06:02:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-28 06:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-28 06:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-28 06:12:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-28 06:14:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-28 06:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
