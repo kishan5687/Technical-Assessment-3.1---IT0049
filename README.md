@@ -7,7 +7,7 @@
 This repository contains the extended Point of Sale (POS) system built using **CodeIgniter 4**. This update introduces editable forms, dynamic validation rules, and profile avatar file uploading with automated thumbnail rendering using the CI4 Image Service.
 
 ## Live Application URL
-* Hosted Version: [Wala pa po]
+* Hosted Version: [(http://rkishan.thsite.top/)]
 
 ## Features Implemented
 - **Customer Management:** 
